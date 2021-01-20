@@ -43,6 +43,6 @@ COPY launch.sh $HOME
 
 COPY blockchain_cfg.json $HOME
 
-EXPOSE 7030 7130
+EXPOSE 9030 9130
 
 ENTRYPOINT $HOME/launch.sh
