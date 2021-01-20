@@ -1,6 +1,6 @@
-FROM fedora:29
+FROM ubuntu:18.04
 
-MAINTAINER gustavonalle@gmail.com
+MAINTAINER obi.nwamarah@gmail.com
 
 ENV TAG=master
 
@@ -43,6 +43,6 @@ COPY launch.sh $HOME
 
 COPY blockchain_cfg.json $HOME
 
-EXPOSE 9030 9130
+EXPOSE 7030 7130
 
 ENTRYPOINT $HOME/launch.sh
