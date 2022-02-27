@@ -5,7 +5,7 @@ MAINTAINER obi.nwamarah@gmail.com
 ENV TAG=master
 
 # Install dependencies 
-RUN dnf -y install which libstdc++-devel zeromq zeromq-devel gcc-c++ findutils libstdc++-static golang \
+RUN apt install -y which libstdc++-devel zeromq zeromq-devel gcc-c++ findutils libstdc++-static golang \
                    snappy-devel zlib-devel bzip2-devel lz4-libs lz4-devel git && \
 	     	   dnf clean all
 
